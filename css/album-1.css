@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --biggest-font-size: 2.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --subtitle-color: #c89b50;
+    --title-color: white;
+    --text-color: white;
+    --swiper-color: #c89b50;
+    --body-color: #191919;
+    --nav--color: black;
+    --hover-color: #c89b50;
+    --link-color: white;
+
+}
+@media screen and (min-width: 968px){
+    :root {
+        --biggest-font-size: 3rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.25rem;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+     margin: 4rem 0 0 0;
+     font-family: 'Poppins', sans-serif;
+     color: var(--text-color);
+     line-height: 1.5;
+     background-color: var(--body-color);
+ } 
+ h1 {
+     color: var(--title-color);
+     font-size: var(--biggest-font-size);
+     margin-bottom: 2rem;
+ } 
+ h4 {
+     color: var(--subtitle-color);
+ }
+ .section-title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+h1, h2, h5 {
+    font-weight: 600;
+}
+h2 {
+    text-transform: uppercase;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+section {
+    padding: 2rem 0 2rem;
+}
+
+main {
+    overflow: hidden;   
+}
+.container {
+    max-width: 968px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+.grid-1 {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.header {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.3);
+}
+.nav {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+@media screen and (max-width: 767px) {
+    .nav_menu {
+        height: 100%;
+        position: fixed;
+        top: 0%;
+        right: -100%;
+        width: 50%;
+        padding: 4rem 1.5rem 0 2.5rem;
+        background: #3a3839;
+        transition: 0.4s;
+    }
+}
+.nav_close {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.nav_item {
+    margin-bottom: 2rem;
+}
+.nav_close,  .nav_logo, .nav_button, .nav_link {
+    color: white;
+    font-weight: 600;
+}
+
+.nav_close:hover {
+    color: var(--hover-color)    ;
+}
+.nav_button:hover {
+    color: var(--hover-color);
+}
+.nav_logo:hover {
+    color: var(--hover-color);
+}
+
+.nav_link:hover {
+    color: var(--hover-color);
+}
+.nav_button {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.show {
+  right: 0;
+}
+.back-icon {
+    color: var(--subtitle-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+   margin-left: 2rem;
+}
+
+.description_container {
+    gap: 3rem;
+}
+.description_img {
+    text-align: center;
+
+}
+.description_img img {
+    box-shadow: 0 0 4px rgba(0,0,0,.1)
+}
+
+.description_detail {
+    text-align: justify;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+      }
+
+.swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+      }
+.swiper-slide img {
+    display: block;
+    width: 100%;
+      }
+.swiper-button-next::after, .swiper-button-prev::after {
+    display: none;
+      }
+.swiper-icon {
+    color: var(--swiper-color);
+    font-size: 1.5rem;
+      }
+.tracklist {
+    margin-bottom: auto;
+}
+.tracklist_container {
+    justify-content: center;
+}
+
+.number {
+    font-weight: 600;
+    color: var(--subtitle-color);
+    padding-right: 1rem;
+}
+.name {
+    font-weight: 600;
+    color: var(--text-color);   
+}
+.time {
+    color: grey;
+    padding-left: 0.5rem;
+}
+.preview {
+    margin-top: 2rem;
+ 
+}
+   @media screen and (max-width: 359px){
+    .nav_menu {
+        width: 70%;
+        padding-left: 2rem;
+    }
+    
+   }
+   @media screen and (min-width: 360px) and (max-width: 575px){
+    .footer_copyright {
+        padding: 2rem 1rem 0 1rem;
+    }   
+    .nav_menu {
+        width: 60%;
+    }
+    .swiper-slide img {
+        padding: 0 3rem 0 3rem;
+    }
+  }
+  @media screen and (min-width: 576px){
+    .header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .main {
+        padding: 0 1rem;
+    }
+    .swiper-slide img {
+        padding: 0 3.5rem 0 3.5rem;
+    }
+    
+  } 
+    @media screen and (min-width: 768px){
+    
+      section{
+        margin-bottom: 5rem;
+        padding: 2rem;
+      }
+      .nav {
+          height: 4.5rem;
+          column-gap: 1rem;
+        }
+      .header {
+          height: 5rem;
+        }
+      .nav_list{
+        display: flex;
+        align-items: center;
+      }
+      .nav_logo {
+          font-size: var(--h3-font-size);
+      }
+      .nav_item{
+        margin-left: 2.5rem;
+        margin-bottom: 0;
+      }
+    
+      .nav_button, .nav_close {
+        display: none;
+      }
+      .swiper-icon {
+          font-size: 3rem;
+      }
+      .swiper {
+        width: 90%;
+        height: 90%;
+          }
+          .swiper-slide img {
+            padding-top: 1.5rem;
+        }
+      .concept_photo {
+          padding: 0;
+      }
+  }
+    @media screen and (min-width: 992px){
+      .description_container {
+          gap: 4rem;
+      }
+      main {
+          padding: 4rem;
+          margin-top: 5rem;
+      }
+      .description_container {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .swiper {
+        width: 80%;
+        height: 80%;
+          }
+      .swiper-slide img {
+          padding: 0 13rem 0 13rem;
+      }
+  }
+  @media screen and (min-width: 1200px) {
+      .back-icon {
+          font-size: 3rem;
+          padding-left: 3rem ;
+      }
+      .container, .nav{
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .swiper {
+            width: 65%;
+            height: 65%;
+              }
+  }
+    
